@@ -1,0 +1,127 @@
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 2px 2px black;
+    letter-spacing: 4px;
+}
+
+.trending {
+    height: auto;
+    background-color: darkslategray;
+}
+
+.superhero {
+    background-color: darkslategray;
+}
+
+.movieSearch{
+    display: flex;
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 35px;
+}
+
+.overview {
+    height: 195px;
+    overflow: hidden;
+}
+
+.cardTitle{
+    height: 50px;
+    background-color: red;
+}
+
+.images{
+    pointer-events: none;
+}
+
+.swiper-button-next {
+  width: 100px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  right: 0px !important;
+}
+
+.swiper-button-prev {
+    width: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    left: 1000px !important;
+    bottom: 0px !important;
+    background-color: red !important;
+}
+
+.upcoming{
+    background-color: darkslategray;
+    padding-bottom: 50px;
+}
+
+.containerBottom {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .containerBottom{
+        display: flex;
+        position: fixed;
+        bottom: 0; 
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #213448;
+        z-index: 999;
+    }
+}
+
+.navbar {
+    transition: transform 0.3s ease-in-out;
+}
+  
+.navbar-hidden {
+    transform: translateY(-100%);
+    /* tes coba coba */
+    /* transition: transform 0.3s ease-in-out;  */
+  }
+  
+.navbar-visible {
+    transform: translateY(0);
+    /* tes coba coba */
+    /* transition: transform 0.3s ease-in-out; */ 
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+}
+
+#intro {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.swiperWrapper {
+    display: flex;
+}
+
+.intro-backdrop {
+    transition: background-image 0.2s ease-in-out;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background: transparent !important;
+    color: gray !important;
+    border: none !important;
+    font-weight: bold !important; /* bikin lebih tebal */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white;
+  filter: brightness(1.5);
+}
